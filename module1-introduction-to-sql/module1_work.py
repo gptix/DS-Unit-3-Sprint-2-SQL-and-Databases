@@ -138,5 +138,7 @@ for w in weapon_counts:
 # weapons_total    
 
 average_weapons_per_char = weapons_total / char_count
-
+print()
 print("The average weapon count per character is: " + str(average_weapons_per_char))
+
+
