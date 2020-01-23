@@ -1,4 +1,21 @@
+<<<<<<< HEAD
+# My Answer to the Discussion Question
+
+## "How was working with MongoDB different from working with 
+## PostgreSQL? What was easier, and what was harder?"
+
+I see a lot of value in both of them. NoSQL is neat because a data model can be changed 
+implicitly by receiving pairs with new keys. This means that special attention might be
+needed to remember to deal with records that did not have new keys.
+
+On the other hand, SQL dbs can be a hassle because records and tables can be orphaned, 
+e.g., when a parent record that has child records is deleted, if discipline is not 
+used, the child records can stick around in the data base forever.
+
+I look forward to seeing how NewSQL changes things.
+=======
 # I DID NOT INCLUDE MY PASSWORD TO MONGODB.
+>>>>>>> 8a29f3ebd15037b3332323c347c570e1dd510d6e
 
 
 # NoSQL and Document-oriented databases
