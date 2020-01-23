@@ -1,31 +1,16 @@
-# My Answer to the Discussion Question
-
-## "How was working with MongoDB different from working with 
-## PostgreSQL? What was easier, and what was harder?"
-
-# I see a lot of value in both of them. NoSQL is neat because a data model can be changed 
-# implicitly by receiving pairs with new keys. This means that special attention might be
-# needed to remember to deal with records that did not have new keys.
-
-# On the other hand, SQL dbs can be a hassle because records and tables can be orphaned, 
-# e.g., when a parent record that has child records is deleted, if discipline is not 
-# used, the child records can stick around in the data base forever.
-
-# I look forward to seeing how NewSQL changes things.
-
-
 import pymongo
 import sqlite3
 
 ## Settings
-password = "not-real"
+password = "eztlN6BQFSqyg9xx"
 path_to_sqlite_db = './'
 ## Connect to mongoDB.com
 
 
 client_request_string = "mongodb://gptix:" + password + "@cluster0-shard-00-00-dxpn7.mongodb.net:27017,cluster0-shard-00-01-dxpn7.mongodb.net:27017,cluster0-shard-00-02-dxpn7.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority"
+
 client = pymongo.MongoClient(client_request_string)
-db = client.test
+
 
 ## Connect to sqlite database at path
 sl_conn  = sqlite3.connect(path_to_sqlite_db + 'rpg_db.sqlite3')
